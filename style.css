@@ -1,7 +1,7 @@
 body
 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: #f0f0f0;
+    background-color: lightcoral;
     color: #333;
     margin: 0;
     padding: 0;
@@ -12,6 +12,8 @@ header
     color: white;
     padding: 20px;
     text-align: center;
+    border: 2px solid navy;
+    border-radius: 8px;
 }
 .container 
 {
@@ -21,15 +23,40 @@ header
     align-items: center;/*Centrerar innehållet vertikalt*/
     height: 100vh;/*Gör att containern tar upp hela höjden av viewporten*/
     background: lightcoral;
-}
+}   
 .box 
 {
     background: lightgoldenrodyellow;
     border: 2px solid navy;
+    color: white;
     border-radius: 8px;
     font-size: 24px;
     padding: 20px;
     margin: 10px;
     flex: 1; /*Gör att boxarna tar upp lika mycket plats*/
     text-align: center; /*Centrerar texten i boxarna*/
+}
+
+.meny 
+{ 
+    display: flex; 
+    justify-content: space-around; 
+    background-color: lightgoldenrodyellow; 
+    padding: 15px; 
+    border: 2px solid navy;
+    border-radius: 8px;
+} 
+.meny a { 
+    color: white; 
+    background-color: darksalmon;
+    border: 2px solid navy;
+    border-radius: 8px;
+    text-decoration: none; 
+    font-size: 18px; 
+    padding: 10px 15px; 
+}
+
+.meny a:hover { 
+    background-color: #555; 
+    border-radius: 5px; 
 }
