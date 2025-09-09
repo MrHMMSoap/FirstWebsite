@@ -8,8 +8,28 @@ body
 }
 header
 {
-    background-color: #4CAF50;
+    background-color: darksalmon;
     color: white;
     padding: 20px;
     text-align: center;
+}
+.container 
+{
+    display: flex;/*Aktiverar flexbox*/
+    flex-direction: column;/*Lägger elementen i en kolumn*/
+    justify-content: center;/*Centrerar innehållet horisontellt*/
+    align-items: center;/*Centrerar innehållet vertikalt*/
+    height: 100vh;/*Gör att containern tar upp hela höjden av viewporten*/
+    background: lightcoral;
+}
+.box 
+{
+    background: lightgoldenrodyellow;
+    border: 2px solid navy;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1; /*Gör att boxarna tar upp lika mycket plats*/
+    text-align: center; /*Centrerar texten i boxarna*/
 }
