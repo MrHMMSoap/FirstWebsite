@@ -18,7 +18,7 @@ header
 .container 
 {
     display: flex;/*Aktiverar flexbox*/
-    flex-direction: column;/*Lägger elementen i en kolumn*/
+    flex-direction: row;/*Lägger elementen i en rad*/
     justify-content: center;/*Centrerar innehållet horisontellt*/
     align-items: center;/*Centrerar innehållet vertikalt*/
     height: 100vh;/*Gör att containern tar upp hela höjden av viewporten*/
