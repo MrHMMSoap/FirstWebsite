@@ -4,7 +4,14 @@ body
     background-color: lightcoral;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+}
+h1
+{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 header
 {
@@ -59,4 +66,67 @@ header
 .meny a:hover { 
     background-color: #555; 
     border-radius: 5px; 
+}
+
+.photogallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow:hidden;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+    border: 2px solid navy;
+}
+
+.photomenu 
+{ 
+    display: flex; 
+    gap: 10px;
+    justify-content: space-around; 
+    background-color: lightgoldenrodyellow; 
+    padding: 15px; 
+    border: 2px solid navy;
+    border-radius: 8px;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: row; /* Stacks the image and text vertically */
+    align-items: center; /* Centers the image and text horizontally within the column */
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis for responsiveness */
+    flex: 1 1 23%; /* Makes each item take up approximately 23% of the container width */
+    box-sizing: border-box;
+    border: 1px solid navy;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.gallery-item img {
+    /* Optional: style the images if needed */
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 2px solid navy;
+    border-radius: 8px;
+    display:block;
+}
+
+.gallery-item p {
+    /* Optional: style the text */
+    margin-top: 10px; /* Adds a small gap between the image and text */
+    font-size: 14px;
+    color: white;
+    text-align: center;
 }
